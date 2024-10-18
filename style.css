@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background: linear-gradient(150deg, #68d956, #07a11f);
+}
+
+header {
+  color: #fff;
+  padding: 30px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.container {
+  flex-direction: column;
+  padding: 30px;
+  height: 200px;
+  max-width: 420px;
+}
+
+.palavraSecreta {
+  display: flex;
+  gap: 0.8rem;
+  font-size: 3rem;
+  flex-wrap: wrap;
+}
+
+.tecladoForca {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+button {
+  height: 30px;
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0 2px 4px rgba(8, 46, 8, 0.5);
+
+  color: #fff;
+}
+
+.tecladoForca button {
+  width: 30px;
+  background-color: #07a11f;
+}
+
+.resetaJogo {
+  width: auto;
+  background-color: #68d956;
+  padding: 0 10px;
+  margin: 30px 0;
+}
+
+button:hover {
+  background-color: #055b12;
+}
+
+@media (max-width: 700px) {
+  main {
+    flex-direction: column;
+    padding: 10px;
+  }
+}
+
+;
