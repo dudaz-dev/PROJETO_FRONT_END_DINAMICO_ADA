@@ -20,6 +20,7 @@ body {
 }
 
 header {
+  font-size: 35px;
   color: #fff;
   padding: 30px;
 }
@@ -28,19 +29,24 @@ header {
   display: flex;
   align-items: center;
   gap: 30px;
+  padding: 0 30px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
 }
 
 .container {
+  display: flex;
+  gap: 30px;
   flex-direction: column;
+  font-size: 20px;
   padding: 30px;
-  height: 200px;
   max-width: 420px;
 }
 
 .palavraSecreta {
   display: flex;
   gap: 0.8rem;
-  font-size: 3rem;
+  font-size: 30px;
   flex-wrap: wrap;
 }
 
@@ -68,13 +74,13 @@ button {
 
 .resetaJogo {
   width: auto;
-  background-color: #68d956;
+  background-color: #4ab939;
   padding: 0 10px;
-  margin: 30px 0;
+  margin: 20px 0;
 }
 
 button:hover {
-  background-color: #055b12;
+  background-color: #022407;
 }
 
 @media (max-width: 700px) {
