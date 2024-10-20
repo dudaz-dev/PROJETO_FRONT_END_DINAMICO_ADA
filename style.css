@@ -36,11 +36,11 @@ header {
 
 .container {
   display: flex;
-  gap: 30px;
   flex-direction: column;
   font-size: 20px;
   padding: 30px;
-  max-width: 420px;
+  max-width: 600px;
+  gap: 30px;
 }
 
 .palavraSecreta {
@@ -52,8 +52,11 @@ header {
 
 .tecladoForca {
   display: flex;
+  justify-content: center;
   gap: 10px;
+  margin-left: 20px;
   flex-wrap: wrap;
+  max-width: 350px;
 }
 
 button {
@@ -63,7 +66,7 @@ button {
   border: none;
   border-radius: 3px;
   box-shadow: 0 2px 4px rgba(8, 46, 8, 0.5);
-
+  max-width: 400px;
   color: #fff;
 }
 
@@ -72,11 +75,20 @@ button {
   background-color: #07a11f;
 }
 
+.inputPalavraInteira {
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 3px;
+  border: none;
+  max-width: 400px;
+  box-shadow: 0 2px 4px rgba(8, 46, 8, 0.5);
+}
+
+.adivinharPalavraBtn,
 .resetaJogo {
   width: auto;
   background-color: #4ab939;
   padding: 0 10px;
-  margin: 20px 0;
 }
 
 button:hover {

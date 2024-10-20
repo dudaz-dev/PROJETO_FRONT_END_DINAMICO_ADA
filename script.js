@@ -1,47 +1,72 @@
-import palavras from "./palavras.js";
-
 document.addEventListener("DOMContentLoaded", () => {
-
   const tecladoForca = document.querySelector(".tecladoForca");
   const imagem = document.querySelector(".imagemForca img");
   const palavraSecreta = document.querySelector(".palavraSecreta");
   const dicaForca = document.querySelector(".dicaForca");
   const resetaJogo = document.querySelector(".resetaJogo");
-  let indexImg;
+  const adivinharPalavraBtn = document.querySelector(".adivinharPalavraBtn");
+  const inputPalavraInteira = document.querySelector(".inputPalavraInteira");
+  let indexImg = 1;
+  let palavrasData;
 
-  // Função de inicialização
+  // Função para carregar o JSON
+  async function carregaPalavras() {
+    const response = await fetch("./palavras.json");
+    palavrasData = await response.json();
+  }
+
+  // Função para inicializar o jogo
   function init() {
     indexImg = 1;
     imagem.src = `img/forca1.png`;
 
-    geradorSecaoPalavras();
-    geradorDeTeclas();
+    if (!palavrasData) {
+      carregaPalavras().then(() => {
+        geradorSecaoPalavras();
+        geradorDeTeclas();
+      });
+    } else {
+      geradorSecaoPalavras();
+      geradorDeTeclas();
+    }
+  }
+
+  // Função para obter a palavra e a dica
+  function palavras() {
+    // Seleciona uma palavra e dica aleatória do arquivo JSON
+    const randomIndex = Math.floor(Math.random() * palavrasData.length);
+    return palavrasData[randomIndex];
   }
 
   // Função para gerar a palavra secreta e a dica
   function geradorSecaoPalavras() {
     palavraSecreta.textContent = "";
 
-    const { palavra, dica } = palavras(); // A função palavras() retorna um objeto com palavra e dica
+    const { palavra, dica } = palavras(); // Obtem a palavra e a dica
     const palavraSemAcento = palavra
       .normalize("NFD")
       .replace(/[\u0300-\u036f]/g, "");
 
     Array.from(palavraSemAcento).forEach((letra) => {
       const span = document.createElement("span");
-      span.textContent = "_";
-      span.setAttribute("data-letra", letra.toUpperCase());
+      if (letra === "-") {
+        span.textContent = "-"; // Mostra o traço diretamente
+        span.classList.add("letra-aceita"); // Adiciona uma classe para marcar como "correta"
+      } else {
+        span.textContent = "_"; // Coloca o sublinhado para outras letras
+        span.setAttribute("data-letra", letra.toUpperCase());
+      }
       palavraSecreta.appendChild(span);
     });
 
     dicaForca.textContent = `Dica: ${dica}`;
-  };
+  }
 
   // Função para gerar as teclas do teclado virtual
   function geradorDeTeclas() {
     tecladoForca.textContent = ""; // Limpa qualquer conteúdo anterior
 
-    for (let i = 65; i <= 90; i++) { // Letras de A a Z (códigos ASCII 65 a 90)
+    for (let i = 65; i <= 90; i++) {
       const botao = document.createElement("button");
       const letra = String.fromCharCode(i).toUpperCase();
       botao.textContent = letra;
@@ -68,7 +93,9 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     const spans = document.querySelectorAll(`.palavraSecreta span`);
-    const won = !Array.from(spans).find((span) => span.textContent === "_");
+
+    // Verifica se não há mais underscores, mas ignora spans que contêm traços
+    const won = !Array.from(spans).find((span) => span.textContent === "_" && !span.classList.contains("letra-aceita"));
 
     if (won) {
       setTimeout(() => {
@@ -86,9 +113,26 @@ document.addEventListener("DOMContentLoaded", () => {
     if (indexImg === 7) { // Limite de erros
       setTimeout(() => {
         alert("Você perdeu =/");
-        init(); // Reinicia o jogo
+        init();
       }, 100);
     }
+  }
+
+  // Função para tentar adivinhar a palavra inteira
+  function adivinharPalavraInteira() {
+    const palavraTentada = inputPalavraInteira.value.trim().toUpperCase();
+    const palavraAtual = Array.from(document.querySelectorAll('.palavraSecreta span'))
+      .map(span => span.getAttribute('data-letra') || span.textContent)
+      .join('');
+
+    if (palavraTentada === palavraAtual) {
+      alert("Parabéns! Você acertou a palavra!");
+      init(); // Reinicia o jogo
+    } else {
+      alert("Palavra incorreta!");
+      respostaErrada(); // Conta como erro
+    }
+    inputPalavraInteira.value = ''; // Limpa o campo de input
   }
 
   // Inicializa o jogo quando a página carrega
@@ -97,4 +141,6 @@ document.addEventListener("DOMContentLoaded", () => {
   // Reseta o jogo ao clicar no botão "NOVO JOGO"
   resetaJogo.addEventListener("click", init);
 
+  // Evento para tentar adivinhar a palavra completa
+  adivinharPalavraBtn.addEventListener("click", adivinharPalavraInteira);
 });
