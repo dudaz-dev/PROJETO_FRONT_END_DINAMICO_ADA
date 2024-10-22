@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/game/game.css">
+  <title>Jogo da Forca</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="../../index.html"><img src="../assets/img/logo.png" alt="logo do jogo da forca"></a>
+      <h1>Jogo da Forca</h1>
+      <ul class="nav-table">
+        <li><a href="./game.html">Jogar</a></li>
+        <li><a href="./rules.html">Regras</a></li>
+        <li><a href="./about.html">Sobre</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="container-game">
+      <div class="container-imagens">
+        <img class="img-forca" src="../assets/img/logo.png" alt="jogo da forca">
+        <div id="word-display" class="word-lines"></div>
+      </div>
+      <div>
+        <button id="start-game-btn">Iniciar Jogo</button>
+      </div>
+      <div class="container-game-function hide">
+        <div class="container-word-display">
+          <div class="container-word">
+            <h2>Dica:</h2>
+            <p id="hint"></p>
+          </div>
+          <div class="container-letters">
+            <h2>Letras já escolhidas:</h2>
+            <ul id="letters-chosen"></ul>
+          </div>
+          <div class="container-remaining-attempts">
+            <h2>Tentativas restantes:</h2>
+            <p id="remaining-attempts">6</p>
+          </div>
+          <div class="container-scoreboard">
+            <h2>Pontuação:</h2>
+            <div class="container-score">
+              <p>Pontuação Total: <span id="score">0</span></p>
+              <p>/</p>
+              <p>Vitórias: <span id="victories">0</span></p>
+              <p>/</p>
+              <p>Derrotas: <span id="defeats">0</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="container-buttons">
+          <button id="reset-game-btn">Reiniciar Jogo</button>
+          <button id="reset-scoreboard-btn">Reiniciar Placar</button>
+        </div>
+        <div class="container-game-function-hide">
+          <div class="hide container-guess-word">
+            <input type="text" id="guess-word-input" placeholder="Chute a palavra">
+            <button id="guess-word-btn">&#x21B5;</button>
+          </div>
+          <div class="teclado-virtual">
+            <ul></ul>
+          </div>
+        </div>
+        <div id="defeat-message">
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div>
+      <p>© 2024 Todos os direitos reservados.</p>
+      <p>Desenvolvido por Gabryel Costa, Pedro, Maria Eduarda e Jefferson Tavares.</p>
+    </div>
+  </footer>
+  <script src="../javascript/game.js"></script>
+</body>
+</html>

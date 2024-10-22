@@ -1,0 +1,61 @@
+main {
+  width: 85%;
+  margin: 150px auto;
+}
+
+.container-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+  background-color: var(--bg-main);
+  border-radius: 25px;
+  padding: 25px 65px;
+
+  & .container-title {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+
+    & h2 {
+      font-size: 25px;
+      font-family: var(--font-subtittle);
+      color: var(--color-subtittle);
+    }
+
+    & p {
+      font-size: 1.6rem;
+      font-family: var(--font-description);
+      font-weight: 400;
+      color: var(--color-description);
+      text-align: center;
+    }
+  }
+
+  & .container-howToPlay {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+
+    & h2 {
+      font-size: 25px;
+      font-family: var(--font-subtittle);
+      color: var(--color-subtittle);
+    }
+
+    & ul {
+      flex-direction: column;
+      gap: 5px;
+      & li {
+        font-size: 1.6rem;
+        font-family: var(--font-description);
+        font-weight: 400;
+        color: var(--color-description);
+        text-align: center;
+      }
+    }
+  }
+}

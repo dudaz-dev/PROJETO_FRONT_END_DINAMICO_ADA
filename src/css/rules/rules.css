@@ -1,0 +1,18 @@
+@import url('../global/global.css');
+@import url('../global/header/header.css');
+@import url('../global/main/main.css');
+@import url('../global/footer/footer.css');
+
+.show-rules-btn {
+  padding: 5px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  color: var(--color-description);
+}
+
+.rules-container {
+  margin-top: 5px;
+  font-size: 16px;
+  line-height: 1.5;
+}

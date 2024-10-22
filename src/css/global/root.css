@@ -1,0 +1,22 @@
+:root {
+  font-size: 62.5%;
+
+  /* fontes principais*/
+    --font-title: "Roboto", sans-serif;
+    --font-subtittle: "Open Sans", sans-serif;
+    --font-description: "Comic Neue", sans-serif;
+
+  /* cores dos textos */
+    --color-title: #ffffff;
+    --color-subtittle: ##ffffff;
+    --color-description: #ffffff;
+    --color-input: #ffffff;
+
+  /* cores do background */
+    --bg-body: #22022b;
+    --bg-header: #700d8b;
+    --bg-main: #700d8b;
+    --bg-footer: #700d8b;
+    --bg-button: #a230c2;
+    --bg-input: #a230c2;
+}
