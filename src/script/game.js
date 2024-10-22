@@ -55,7 +55,7 @@ const incrementLosses = () => {
     updateScoreDisplay(); 
 };
 
-const ilose = () => {
+const ilose = (wordCorrect) => {
     document.querySelector(".life-count").textContent = 0;
     const heroElement = document.querySelector("#hero");
     heroElement.src = "../src/images/nahamDamage.png"; 
@@ -67,7 +67,7 @@ const ilose = () => {
     setTimeout(() => {
         incrementLosses(); 
         gameOverModal.style.display = "block"; 
-        document.querySelector(".theCorrectAnimal").textContent = palavra;
+        document.querySelector(".theCorrectAnimal").textContent = wordCorrect;
     }, 2000); 
 };
 
@@ -114,7 +114,7 @@ const checkLetters = (letter, palavra) => {
 
         switch (life) {
             case 1:
-                ilose();
+                ilose(palavra);
                 break;
 
             default:
@@ -141,7 +141,7 @@ document.querySelector(".text-send").addEventListener("click", () => {
         showVictoryModal();
         document.querySelector(".text-send").disabled = true;
     } else {
-        ilose();
+        ilose(correctWord);
         document.querySelector(".text-send").disabled = true;
     }
     
