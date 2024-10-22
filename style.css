@@ -22,7 +22,6 @@ body {
 header {
   font-size: 35px;
   color: #fff;
-  padding: 30px;
 }
 
 .menu {
@@ -32,6 +31,7 @@ header {
   padding: 0 30px;
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 5px;
+  margin: 20px;
 }
 
 .container {
@@ -89,6 +89,15 @@ button {
   width: auto;
   background-color: #4ab939;
   padding: 0 10px;
+}
+
+.statusJogo p {
+  display: inline-block;
+  border: solid 2px #022407;
+  padding: 4px;
+  border-radius: 3px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(8, 46, 8, 0.5);
 }
 
 button:hover {
