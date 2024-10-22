@@ -53,7 +53,7 @@ Contribuições são bem-vindas! Sinta-se à vontade para abrir um **pull reques
 
 ## 👨‍💻 Desenvolvedores
 - [Lucas Borges](https://github.com/DOULORES)
-- [Jefersson Lucas](https://github.com/JefersonT4v4res)
+- [Jeferson Lucas](https://github.com/JefersonT4v4res)
 - [Maria Eduarda](https://github.com/dudaz-dev)
 - [Gabryel Costa](https://github.com/gabryelcosta)
 
