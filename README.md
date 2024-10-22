@@ -57,5 +57,8 @@ Contribuições são bem-vindas! Sinta-se à vontade para abrir um **pull reques
 - **Maria Eduarda**
 - **Gabryel Costa**
 
+## Deploy
+**Confira** esse é o link para o [DEPLOY](https://projeto-front-end-dinamico-ada.vercel.app/).
+
 ## 📜 Licença
 Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
