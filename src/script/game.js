@@ -139,12 +139,13 @@ document.querySelector(".text-send").addEventListener("click", () => {
         document.querySelector('.word-field').textContent = typedAnswer;
         incrementWins();
         showVictoryModal();
+        document.querySelector(".text-send").disabled = true;
     } else {
         ilose();
+        document.querySelector(".text-send").disabled = true;
     }
     
     document.querySelector(".inp_text").value = "";
-    document.querySelector(".text-send").disabled = true;
 });
 
 
