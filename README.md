@@ -52,10 +52,10 @@ Este é um jogo da forca desenvolvido em **JavaScript**, **HTML** e **CSS**. O o
 Contribuições são bem-vindas! Sinta-se à vontade para abrir um **pull request** com sugestões de melhorias, novas funcionalidades ou correções de bugs.
 
 ## 👨‍💻 Desenvolvedores
-- **Lucas Borges**
-- **Jefersson Lucas**
-- **Maria Eduarda**
-- **Gabryel Costa**
+- [Lucas Borges](https://github.com/DOULORES)
+- [Jefersson Lucas](https://github.com/JefersonT4v4res)
+- [Maria Eduarda](https://github.com/dudaz-dev)
+- [Gabryel Costa](https://github.com/gabryelcosta)
 
 ## Deploy
 **Confira** esse é o link para o [DEPLOY](https://projeto-front-end-dinamico-ada.vercel.app/).
