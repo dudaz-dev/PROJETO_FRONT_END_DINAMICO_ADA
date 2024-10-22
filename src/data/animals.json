@@ -1,0 +1,354 @@
+[
+    {
+        "palavra": "elefante",
+        "dica": "O maior mamifero terrestre, conhecido por suas orelhas grandes e tromba longa."
+    },
+    {
+        "palavra": "golfinho",
+        "dica": "Um mamifero aquatico conhecido por sua inteligencia e habilidades acrobaticas."
+    },
+    {
+        "palavra": "panda",
+        "dica": "Um urso famoso por sua pelagem preta e branca, geralmente encontrado na China."
+    },
+    {
+        "palavra": "falcao",
+        "dica": "Uma ave de rapina conhecida por sua velocidade e visao aguçada."
+    },
+    {
+        "palavra": "canguru",
+        "dica": "Um marsupial que salta e e simbolo da Australia."
+    },
+    {
+        "palavra": "tigre",
+        "dica": "Um grande felino listrado, considerado um dos predadores mais formidaveis."
+    },
+    {
+        "palavra": "tubarao",
+        "dica": "Um peixe cartilaginoso, muitas vezes temido, conhecido por suas varias especies."
+    },
+    {
+        "palavra": "coruja",
+        "dica": "Uma ave noturna que simboliza a sabedoria e tem visao excepcional no escuro."
+    },
+    {
+        "palavra": "leao",
+        "dica": "Conhecido como o 'rei da selva', e um grande felino social que vive em grupos."
+    },
+    {
+        "palavra": "urso",
+        "dica": "Um grande mamifero que pode ser encontrado em florestas e montanhas, famoso por sua hibernacao."
+    },
+    {
+        "palavra": "jacare",
+        "dica": "Um reptil semi-aquatico, encontrado em regioes tropicais, conhecido por sua mordida poderosa."
+    },
+    {
+        "palavra": "hipopotamo",
+        "dica": "Um grande mamifero semi-aquatico, conhecido por sua pele espessa e comportamento territorial."
+    },
+    {
+        "palavra": "gato",
+        "dica": "Um popular animal de estimação, conhecido por sua independencia e habilidade de caçar roedores."
+    },
+    {
+        "palavra": "cachorro",
+        "dica": "O melhor amigo do homem, conhecido por sua lealdade e variedade de racas."
+    },
+    {
+        "palavra": "raposa",
+        "dica": "Um pequeno mamifero astuto, conhecido por sua pelagem avermelhada e cauda longa."
+    },
+    {
+        "palavra": "sapo",
+        "dica": "Um anfibio que vive tanto em terra quanto na agua, famoso por seu croar e pele umida."
+    },
+    {
+        "palavra": "vaca",
+        "dica": "Um animal de fazenda conhecido por produzir leite e carne."
+    },
+    {
+        "palavra": "pato",
+        "dica": "Uma ave aquatico que e conhecida por seu quack e habilidade de nadar."
+    },
+    {
+        "palavra": "arara",
+        "dica": "Uma ave colorida e inteligente, frequentemente encontrada nas florestas tropicais da America do Sul."
+    },
+    {
+        "palavra": "cavalo",
+        "dica": "Um grande mamifero usado para montaria e trabalho, conhecido por sua velocidade e forca."
+    },
+    {
+        "palavra": "formiga",
+        "dica": "Um pequeno inseto conhecido por sua organizacao social e trabalho em equipe."
+    },
+    {
+        "palavra": "abelha",
+        "dica": "Um inseto importante para a polinizacao, famoso pela producao de mel."
+    },
+    {
+        "palavra": "lobo",
+        "dica": "Um mamifero carnivoro que vive em matilhas, conhecido por sua habilidade de caça."
+    },
+    {
+        "palavra": "tartaruga",
+        "dica": "Um reptil que tem um casco duro e e conhecido por sua longevidade."
+    },
+    {
+        "palavra": "rinoceronte",
+        "dica": "Um grande mamifero com um ou dois chifres, ameacado de extincao por caça ilegal."
+    },
+    {
+        "palavra": "morcego",
+        "dica": "O unico mamifero capaz de voar ativamente, frequentemente associado a lugares escuros."
+    },
+    {
+        "palavra": "baleia",
+        "dica": "Um dos maiores animais do planeta, conhecido por suas cancoes e migracoes."
+    },
+    {
+        "palavra": "pinguim",
+        "dica": "Uma ave nao voadora, famosa por sua aparencia caracteristica e adaptacao ao frio."
+    },
+    {
+        "palavra": "cervo",
+        "dica": "Um mamifero herbivoro conhecido por seus galhos e habitats florestais."
+    },
+    {
+        "palavra": "lontra",
+        "dica": "Um mamifero aquatico agil, conhecido por sua brincadeira e habitos sociais."
+    },
+    {
+        "palavra": "grilo",
+        "dica": "Um inseto conhecido por seu canto alto e atividade noturna."
+    },
+    {
+        "palavra": "canguru",
+        "dica": "Um marsupial famoso por sua habilidade de saltar grandes distancias."
+    },
+    {
+        "palavra": "coelho",
+        "dica": "Um pequeno mamifero conhecido por suas orelhas longas e reproducao rapida."
+    },
+    {
+        "palavra": "cavalo-marinho",
+        "dica": "Um peixe com formato peculiar, onde os machos ficam gravidos."
+    },
+    {
+        "palavra": "flamingo",
+        "dica": "Uma ave conhecida por sua coloração rosa e pernas longas."
+    },
+    {
+        "palavra": "porco-espinho",
+        "dica": "Um mamifero coberto por espinhos, usado como defesa contra predadores."
+    },
+    {
+        "palavra": "lemure",
+        "dica": "Um primata endemico de Madagascar, famoso por seus olhos grandes."
+    },
+    {
+        "palavra": "tarantula",
+        "dica": "Uma aranha grande e peluda, muitas vezes temida."
+    },
+    {
+        "palavra": "sardinha",
+        "dica": "Um pequeno peixe que vive em cardumes e e popular na culinaria."
+    },
+    {
+        "palavra": "salamandra",
+        "dica": "Um anfibio que pode ter cores brilhantes e vive em ambientes umidos."
+    },
+    {
+        "palavra": "ourico",
+        "dica": "Um pequeno mamifero que se enrola em uma bola para se proteger."
+    },
+    {
+        "palavra": "bicho-preguica",
+        "dica": "Um mamifero que se move lentamente e passa a maior parte do tempo em arvores."
+    },
+    {
+        "palavra": "canguru",
+        "dica": "Um marsupial famoso por sua habilidade de saltar grandes distancias."
+    },
+    {
+        "palavra": "narval",
+        "dica": "Um cetaceo conhecido pelo seu longo dente em forma de espiral."
+    },
+    {
+        "palavra": "galo",
+        "dica": "Um macho da ave conhecida como galinha, famoso por seu canto ao amanhecer."
+    },
+    {
+        "palavra": "pavao",
+        "dica": "Uma ave conhecida por suas penas coloridas e exuberantes."
+    },
+    {
+        "palavra": "tubarao-baleia",
+        "dica": "O maior peixe do mundo, conhecido por sua natureza docil."
+    },
+    {
+        "palavra": "rato",
+        "dica": "Um pequeno roedor que e conhecido por sua capacidade de se adaptar a ambientes urbanos."
+    },
+    {
+        "palavra": "doninha",
+        "dica": "Um pequeno mamifero carnivoro, conhecido por sua agilidade e comportamento astuto."
+    },
+    {
+        "palavra": "bicho-da-seda",
+        "dica": "Um inseto famoso por produzir seda a partir de sua casca."
+    },
+    {
+        "palavra": "gibao",
+        "dica": "Um primata conhecido por seus braços longos e habilidade de balancar-se entre as arvores."
+    },
+    {
+        "palavra": "mula",
+        "dica": "Um hidbrido entre um cavalo e uma jumenta, conhecido por sua forca."
+    },
+    {
+        "palavra": "bufalo",
+        "dica": "Um grande mamifero herbivoro, frequentemente encontrado em pastagens."
+    },
+    {
+        "palavra": "tucano",
+        "dica": "Uma ave tropical conhecida por seu bico colorido e grande."
+    },
+    {
+        "palavra": "lince",
+        "dica": "Um felino selvagem conhecido por suas orelhas tuftadas e patas grandes."
+    },
+    {
+        "palavra": "foca",
+        "dica": "Um mamifero marinho que passa parte do tempo em terra e parte no mar."
+    },
+    {
+        "palavra": "puma",
+        "dica": "Um grande felino tambem conhecido como onca-parda, encontrado nas Americas."
+    },
+    {
+        "palavra": "tuiuiu",
+        "dica": "Uma ave grande, simbolo do Pantanal brasileiro, conhecida por seu bico longo."
+    },
+    {
+        "palavra": "cutia",
+        "dica": "Um roedor de medio porte, encontrado em florestas e areas abertas."
+    },
+    {
+        "palavra": "gaivota",
+        "dica": "Uma ave costiera conhecida por seu comportamento oportunista."
+    },
+    {
+        "palavra": "zebra",
+        "dica": "Um equino conhecido por suas listras pretas e brancas."
+    },
+    {
+        "palavra": "andorinha",
+        "dica": "Uma ave migratoria conhecida por sua habilidade de voar em alta velocidade."
+    },
+    {
+        "palavra": "urubu",
+        "dica": "Uma ave de rapina que se alimenta de carniça, conhecida por sua aparencia distinta."
+    },
+    {
+        "palavra": "codorna",
+        "dica": "Uma pequena ave conhecida por seu canto e ovos comestiveis."
+    },
+    {
+        "palavra": "marmota",
+        "dica": "Um roedor encontrado em regioes montanhosas, famoso por sua hibernacao."
+    },
+    {
+        "palavra": "jacare-de-papo-amarelo",
+        "dica": "Uma especie de jacare encontrada no Brasil, reconhecida pela coloração."
+    },
+    {
+        "palavra": "ra",
+        "dica": "Um anfibio que vive em ambientes aquáticos, famoso por seu salto."
+    },
+    {
+        "palavra": "paca",
+        "dica": "Um roedor noturno, conhecido por seu corpo robusto e habitos de escavacao."
+    },
+    {
+        "palavra": "cervo-do-pantanal",
+        "dica": "Um grande mamifero herbivoro que habita as areas alagadas do Brasil."
+    },
+    {
+        "palavra": "esquilo",
+        "dica": "Um pequeno roedor agil, conhecido por sua cauda longa e habito de coletar nozes."
+    },
+    {
+        "palavra": "antilope",
+        "dica": "Um mamifero herbivoro encontrado na Africa, conhecido por suas habilidades de salto."
+    },
+    {
+        "palavra": "lobo-guara",
+        "dica": "Um grande canideo brasileiro, conhecido por suas longas patas e pelagem avermelhada."
+    },
+    {
+        "palavra": "puma",
+        "dica": "Um grande felino tambem conhecido como onca-parda, encontrado nas Americas."
+    },
+    {
+        "palavra": "peixe-palhaco",
+        "dica": "Um peixe colorido que vive em anemonas do mar, famoso pelo filme 'Procurando Nemo'."
+    },
+    {
+        "palavra": "bicho-de-conta",
+        "dica": "Um crustaceo terrestre, conhecido por seu corpo segmentado e habilidade de se enrolar."
+    },
+    {
+        "palavra": "pavao",
+        "dica": "Uma ave famosa por sua plumagem colorida e exibicao durante o acasalamento."
+    },
+    {
+        "palavra": "bisonte",
+        "dica": "Um grande mamifero herbivoro encontrado nas pradarias da America do Norte."
+    },
+    {
+        "palavra": "tatu",
+        "dica": "Um mamifero conhecido por seu casco duro e habito de escavar buracos."
+    },
+    {
+        "palavra": "lagarto",
+        "dica": "Um reptil que pode variar em tamanho e cor, muitas vezes encontrado em ambientes secos."
+    },
+    {
+        "palavra": "salamandra",
+        "dica": "Um anfibio que pode ter cores brilhantes e vive em ambientes umidos."
+    },
+    {
+        "palavra": "bicho-da-seda",
+        "dica": "Um inseto famoso por produzir seda a partir de sua casca."
+    },
+    {
+        "palavra": "morcego",
+        "dica": "O unico mamifero capaz de voar ativamente, frequentemente associado a lugares escuros."
+    },
+    {
+        "palavra": "pinguim-imperador",
+        "dica": "A maior especie de pinguim, conhecida por suas migracoes em grupos."
+    },
+    {
+        "palavra": "canguru-vermelho",
+        "dica": "A maior especie de canguru, conhecida por seu tamanho e forca."
+    },
+    {
+        "palavra": "tucano",
+        "dica": "Uma ave tropical conhecida por seu bico colorido e grande."
+    },
+    {
+        "palavra": "baleia-jubarte",
+        "dica": "Uma especie de baleia conhecida por suas cancoes complexas."
+    },
+    {
+        "palavra": "anta",
+        "dica": "Um grande mamifero herbivoro que vive em florestas tropicais da America do Sul."
+    },
+    {
+        "palavra": "morcego-de-fruta",
+        "dica": "Um morcego que se alimenta de frutas e flores, importante para a polinizacao."
+    }
+]

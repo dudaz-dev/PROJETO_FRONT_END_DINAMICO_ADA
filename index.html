@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Jogo da Forca </title>
+  <link rel="stylesheet" href="./src/style/index.css">
+</head>
+
+<body>
+  <section class="jPanel">
+    <div class="notepad">
+        <div class="notepad-header">
+          <span class="navbar">bloco de notas</span>
+            <div class="modal-title_close" id="encerrar">
+              <img src="https://github.com/JefersonT4v4res/ImersaoDev_Alura/blob/main/_imgs/close.png?raw=true" alt="fechar" width="20" height="20">
+            </div>
+        </div>
+
+        <div class="content">
+          <h1 class="notepad-title">Projeto Jogo da Forca</h1>
+            <div class="item">
+                <img src="./src/images/gabriel.jpg" alt="Imagem 1">
+                <p>Gabryel Costa.</p>
+            </div>
+            <div class="item">
+                <img src="./src/images/eduarda.jpeg" alt="Imagem 2">
+                <p>Maria Eduarda.</p>
+            </div>
+            <div class="item">
+                <img src="./src/images/jeferson.jpeg" alt="Imagem 3">
+                <p>Jeferson Tavares</p>
+            </div>
+            <div class="item">
+                <img src="./src/images/Lucas.jpg" alt="Imagem 4">
+                <p>Lucas Carvalho.</p>
+            </div>
+        
+        <h2 class="requirements">Requisitos:</h2>
+        <ul>
+            <li>Definir comportamento ao acertar a palavra. -> OK</li>
+            <li>Aceitar o chute digitado da palavra. -> OK</li>
+            <li>Atualizar vitórias e derrotas. -> OK</li>
+            <li>Salvar essas informações no localstorage. -> OK</li>
+        </ul>
+        <h2 class="requirements fix">Corrigir:</h2>
+        <ul>
+            <li>Informar qual palavra sorteada ao perder -> OK</li>
+            <li>Aumentar um pouco a fonte da dica -> OK</li>
+        </ul>
+        <h2 class="requirements add">Adicionar:</h2>
+        <ul>
+            <li>Adicionar a animação do dano -> OK</li>
+            <li>Adicionar animação vitória -> OK</li>
+        </ul>
+      </div>
+    </div>
+  
+    <div class="jFrame">
+      <div class="barra-ferramentas">
+        <div class="nome-aplicacao">
+          <h1 id="nome">Jogo da forca</h1>
+        </div>
+        <div class="container">
+          <div class="barra-ferramenta_options" id="minimizar">
+            <img src="https://github.com/JefersonT4v4res/ImersaoDev_Alura/blob/main/_imgs/minimize-sign.png?raw=true" alt="minimizar" width="20" height="20">
+          </div>
+          <div class="barra-ferramenta_options" id="maximizar">
+            <img src="https://github.com/JefersonT4v4res/ImersaoDev_Alura/blob/main/_imgs/squares.png?raw=true" alt="maximizar" width="20" height="20">
+          </div>
+          <div class="barra-ferramenta_options" id="encerrar">
+            <img src="https://github.com/JefersonT4v4res/ImersaoDev_Alura/blob/main/_imgs/close.png?raw=true" alt="fechar" width="20" height="20">
+          </div>
+        </div>
+      </div>
+
+      <div class="cover-gamer">
+        <div class="start-game"> 
+          <p class="story-game" id="text1">Durante suas aventuras, nosso herói se encontra com a grande Esfinge. Para que sua jornada continue desvende os enígmas dela e conquiste sua passagem.
+              Você tem seis tentativas para acertar a palavra e derrotar a Esfinge!
+          </p>
+            <button id="btn_comecar" type="submit">Começar!</button>
+        </div>
+      </div>  
+
+      <div id="gameOverModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="modal-title">Error - Alerta do sistema!</span>
+                  <div class="modal-title_close" id="encerrar">
+                    <img src="https://github.com/JefersonT4v4res/ImersaoDev_Alura/blob/main/_imgs/close.png?raw=true" alt="fechar" width="20" height="20">
+                  </div>
+            </div>
+            <div class="modal-body">
+                <p>Nosso heróis não conseguiu superar o desafio da Esfinge. Não deixe essa perda te deter, existe sempre uma segunda chance.</p>
+                <p>A palavra correta era: <span class="theCorrectAnimal"></span></p>
+            </div>
+            <p class="score">VITÓRIAS: <span class="wins">0</span> | DERROTAS: <span class="defeats">0</span></p>
+            <div class="modal-footer">
+                <button id="retryBtn" class="reload">Tente Novamente!</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="victory-modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="modal-title">? Error !? - Alerta do sistema!</span>
+            <div class="modal-title_close" id="encerrar">
+              <img loading="lazy" src="https://github.com/JefersonT4v4res/ImersaoDev_Alura/blob/main/_imgs/close.png?raw=true" alt="fechar" width="20" height="20">
+            </div>
+            </div>
+        <div class="victory">
+          <h1>Parabéns, você venceu!</h1>
+          <p>Você superou a esfinge em seu próprio desafio!</p>
+          <p class="score">VITÓRIAS: <span class="wins">0</span> | DERROTAS: <span class="defeats">0</span></p>
+          <div class="modal-footer">
+            <button id="retryBtn" class="reload">Desafie a Esfinge novamente</button>
+        </div>
+
+      </div>
+    </div>
+        <div class="confetti-container">
+          <div class="confetti"></div>
+          <div class="confetti"></div>
+          <div class="confetti"></div>
+          <div class="confetti"></div>
+          <div class="confetti"></div>
+          <div class="confetti"></div>
+          <div class="confetti"></div>
+          <div class="confetti"></div>
+          <div class="confetti"></div>
+          <div class="confetti"></div>
+          <div class="confetti"></div>
+          <div class="confetti"></div>
+        </div>
+    </div>
+
+      <main class="container-game">
+        <section class="section-game">
+          <div class="life">
+            <p><span class="life-count">6</span>x</p>
+            <img class="iconLife" src="https://github.com/JefersonT4v4res/ImersaoDev_Alura/blob/main/_imgs/lifeIcon.png?raw=true" alt="Ícone de vida">
+          </div>
+          <div id="versus-arena">
+            <img id="hero" src="https://github.com/JefersonT4v4res/ImersaoDev_Alura/blob/main/_imgs/Naham.png?raw=true" alt="">
+            <img id="inimigo" src="https://github.com/JefersonT4v4res/ImersaoDev_Alura/blob/main/_imgs/sphinx.png?raw=true" alt="">
+        </div>
+        <img id="ground" src="https://github.com/JefersonT4v4res/ImersaoDev_Alura/blob/main/_imgs/ground.jpg?raw=true" alt="">
+        </section>
+        <aside class="game-control">
+          <p class="game-tip">TEMA: <span class="theme-tip"></span></p>
+          
+          <div class="word-field">______ - __ - ____ - _______</div>
+
+            <div class="keyboard mainBoard">
+
+                <div class="key-row">
+                    <button class="key" id="Q">Q</button>
+                    <button class="key">W</button>
+                    <button class="key">E</button>
+                    <button class="key">R</button>
+                    <button class="key">T</button>
+                    <button class="key">Y</button>
+                    <button class="key">U</button>
+                    <button class="key">I</button>
+                    <button class="key">O</button>
+                    <button class="key">P</button>
+                </div>
+
+                <div class="key-row">
+                    <button class="key">A</button>
+                    <button class="key">S</button>
+                    <button class="key">D</button>
+                    <button class="key">F</button>
+                    <button class="key">G</button>
+                    <button class="key">H</button>
+                    <button class="key">J</button>
+                    <button class="key">K</button>
+                    <button class="key">L</button>
+                </div>
+ 
+                <div class="key-row">
+                    <button class="key">Z</button>
+                    <button class="key">X</button>
+                    <button class="key">C</button>
+                    <button class="key">V</button>
+                    <button class="key">B</button>
+                    <button class="key">N</button>
+                    <button class="key">M</button>
+                </div>
+              
+                <div class="key-row">
+                   <button class="especial-key guess">Chutar Palavra</button>
+                  <button class="especial-key reload">Reiniciar</button>
+                </div>
+            </div>
+
+          <div class="keyboard guess-word"> 
+            <p class="warning"></p>
+            <div class="guess-word_container">
+              <button class="btn-layout decline">
+                <img class="keyboard-imgs" src="https://github.com/JefersonT4v4res/ImersaoDev_Alura/blob/main/_imgs/close.png?raw=true" alt="fechar">
+              </button>
+              <input type="text" class="inp_text" placeholder="Digite aqui...">
+              <button class="btn-layout text-send" >
+                <img class="keyboard-imgs" src="https://github.com/JefersonT4v4res/ImersaoDev_Alura/blob/main/_imgs/moreThan.png?raw=true" alt="enviar">
+              </button>
+            </div>
+          </div>
+        </aside>
+
+      </main>
+    </div>
+  </section>
+
+ 
+  <script type="module" src="./src/script/game.js"></script>
+  <script type="module" src="./src/script/events.js"></script>
+</body>
+
+</html>
